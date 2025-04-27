@@ -15,7 +15,7 @@ const Header = () => {
 
     const navItems = [
         { name: 'Expertise', link: '/' },
-        { name: 'Defi Fund', link: '#' },
+        { name: 'Defi Fund', link: '/defifund' },
         { name: 'Web3 Portfolio', link: '#' },
         { name: 'Partners', link: '#' },
         { name: 'Brands', link: '#' },
