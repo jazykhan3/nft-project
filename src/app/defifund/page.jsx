@@ -13,9 +13,10 @@ import growthLogo from '../../../public/assets/images/growth-icon.png';
 import assettradeLogo from '../../../public/assets/images/asset-trade.png';
 import assetmanageLogo from '../../../public/assets/images/asset-manage.png';
 import CryptoCard from './CryptoCard'
+import Link from 'next/link';
 
 
-const DefiFund = () => {  
+const DefiFund = () => {
   return (
     <>
       <Header />
@@ -59,6 +60,7 @@ const DefiFund = () => {
               On-Chain Funds Designed for Every Risk Level
               A Proven History of Success Over 5 Years
             </p>
+
             <Image
               src={FundPerformanceImage}
               width={710}
@@ -101,10 +103,10 @@ const DefiFund = () => {
             <CryptoCard />
           </div>
           <div className='flex justify-center items-center px-6'>
-          <CryptoCard />
+            <CryptoCard />
           </div>
           <div className='flex justify-center items-center px-6'>
-          <CryptoCard />
+            <CryptoCard />
           </div>
         </div>
         <p className='border-s border-b border-e border-[#5D5D5D] lg:px-6 md:px-4 sm:px-3 px-2 py-6'>
@@ -320,7 +322,7 @@ const DefiFund = () => {
           Learn More About our offerings
         </h1>
         <div className='border-b border-s border-e border-[#5D5D5D]'>
-          <div className='grid md:grid-cols-3 grid-cols-1 gap-0'>
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-0'>
             <div className='relative p-10 md:border-e border-e-0 border-[#5D5D5D] flex items-center justify-center'>
               {/* Top left  */}
               <Image
@@ -363,113 +365,13 @@ const DefiFund = () => {
                 className='w-3 h-3 object-contain absolute bottom-7 right-7'
               />
             </div>
-            <div className='col-span-2 flex flex-col gap-10 lg:px-8 md:px-6 sm:px-4 px-2 lg:py-16 md:py-12 sm:py-9 py-7 justify-center'>
-              <form className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Name */}
-                <div className="flex flex-col">
-                  <label className='text-white font-normal text-sm flex items-center gap-2 mb-3 uppercase'>
-                    <Image
-                      src={BottomleftAngle}
-                      width={12}
-                      height={12}
-                      alt='BottomLeftTriangle'
-                      className='w-3 h-3 object-contain '
-                    />
-                    <span>Name</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="border border-[#f4f4f4] hover:border-[#B580FC] focus:border-[#B580FC] px-4 py-3 text-white placeholder-[#a3a3a3] focus:outline-none text-[16px] text-normal"
-                  />
-                </div>
-
-                {/* Email */}
-                <div className="flex flex-col">
-                  <label className='text-white font-normal text-sm flex items-center gap-2 mb-3 uppercase'>
-                    <Image
-                      src={BottomleftAngle}
-                      width={12}
-                      height={12}
-                      alt='BottomLeftTriangle'
-                      className='w-3 h-3 object-contain '
-                    />
-                    <span>Email</span>
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Enter your Email"
-                    className="border border-[#f4f4f4] hover:border-[#B580FC] focus:border-[#B580FC] px-4 py-3 text-white placeholder-[#a3a3a3] focus:outline-none text-[16px] text-normal"
-                  />
-                </div>
-
-                {/* Contact Number */}
-                <div className="flex flex-col">
-                  <label className='text-white font-normal text-sm flex items-center gap-2 mb-3 uppercase'>
-                    <Image
-                      src={BottomleftAngle}
-                      width={12}
-                      height={12}
-                      alt='BottomLeftTriangle'
-                      className='w-3 h-3 object-contain '
-                    />
-                    <span>Contact Number</span>
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="Enter your contact number"
-                    className="border border-[#f4f4f4] hover:border-[#B580FC] focus:border-[#B580FC] px-4 py-3 text-white placeholder-[#a3a3a3] focus:outline-none text-[16px] text-normal"
-                  />
-                </div>
-
-                {/* Linkedin */}
-                <div className="flex flex-col">
-                  <label className='text-white font-normal text-sm flex items-center gap-2 mb-3 uppercase'>
-                    <Image
-                      src={BottomleftAngle}
-                      width={12}
-                      height={12}
-                      alt='BottomLeftTriangle'
-                      className='w-3 h-3 object-contain '
-                    />
-                    <span>LinkedIn</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your LinkedIn link"
-                    className="border border-[#f4f4f4] hover:border-[#B580FC] focus:border-[#B580FC] px-4 py-3 text-white placeholder-[#a3a3a3] focus:outline-none text-[16px] text-normal"
-                  />
-                </div>
-
-                {/* Message */}
-                <div className="flex flex-col sm:col-span-2">
-                  <label className='text-white font-normal text-sm flex items-center gap-2 mb-3 uppercase'>
-                    <Image
-                      src={BottomleftAngle}
-                      width={12}
-                      height={12}
-                      alt='BottomLeftTriangle'
-                      className='w-3 h-3 object-contain '
-                    />
-                    <span>Message</span>
-                  </label>
-                  <textarea
-                    rows="4"
-                    placeholder="Enter your message"
-                    className="border border-[#f4f4f4] hover:border-[#B580FC] focus:border-[#B580FC] px-4 py-3 text-white placeholder-[#a3a3a3] focus:outline-none text-[16px] text-normal resize-none"
-                  ></textarea>
-                </div>
-
-                {/* Button */}
-                <div className="sm:col-span-2">
-                  <button
-                    type="submit"
-                    className="w-full bg-[#336DFF] hover:bg-[#336DFF]/85 transition-colors duration-300 py-3 uppercase text-sm tracking-wide font-semibold"
-                  >
-                    Get In Touch ↗
-                  </button>
-                </div>
-              </form>
+            <div className='lg:col-span-2 md:grid-cols-1 flex justify-center items-end h-full'>
+              <Link
+                href='https://tally.so/r/3EAEDl'
+                className='h-fit w-full bg-[#336DFF] hover:bg-[#336DFF]/85 transition-colors duration-300 text-center py-3 uppercase text-sm tracking-wide font-semibold'
+              >
+                Get In Touch ↗
+              </Link>
             </div>
           </div>
         </div>

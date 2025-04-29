@@ -646,7 +646,7 @@ const FrontPageV2 = () => {
             Contact us if you believe you have a brand that fits our “Family” or would like to get in touch with one of our brands.
           </p>
           <Link
-            href=''
+            href='https://tally.so/r/np51G1'
             className='h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
           >
             Contact Us
@@ -734,7 +734,7 @@ const FrontPageV2 = () => {
             </p>
           </div>
           <Link
-            href=''
+            href='https://tally.so/r/np51G1'
             className='text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
           >
             Contact Us

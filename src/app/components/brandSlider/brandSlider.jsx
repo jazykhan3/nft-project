@@ -87,7 +87,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                                 <p className="text-sm text-[#F4F4F2] m-0">Founded by Mohammed Carrim Ganey</p>
                             </div>
                             <Link
-                                href=''
+                                href='https://www.aweh.ventures/'
                                 className='text-sm text-[#FFF] m-0 text-center p-4 uppercase hover:bg-[#336DFF]'
                             >
                                 Website
@@ -199,7 +199,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                                 <p className="text-sm text-[#F4F4F2] m-0"> Founded by Mohammed Carrim Ganey</p>
                             </div>
                             <Link
-                                href=''
+                                href='https://www.aweh.ventures/'
                                 className='text-sm text-[#FFF] m-0 text-center p-4 uppercase hover:bg-[#336DFF]'
                             >
                                 Website

@@ -9,13 +9,16 @@ const Footer = () => {
   return (
     <footer className={`border-t ${pathname == '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
       <div className="md:py-4 py-7 max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex md:flex-row flex-col md:gap-0.5 gap-6  items-center justify-between h-full ">
-        <Image
-          src={Logo}
-          width={123}
-          height={25}
-          alt='Footer Logo'
-          className='w-[123px] h-6 object-contain '
-        />
+        <Link href='/'>
+          <Image
+            src={Logo}
+            width={123}
+            height={25}
+            alt='Footer Logo'
+            className='w-[123px] h-6 object-contain '
+          />
+        </Link>
+
         <div className='flex items-center lg:gap-20 md:gap-16 sm:gap-10 gap-6'>
           <Link
             href=''

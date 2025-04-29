@@ -40,13 +40,16 @@ const Header = () => {
             <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex items-center justify-between h-full ">
                 {/* Logo */}
                 <div className={`h-full flex items-center pe-7 border-e border-[#5D5D5D] ${pathname == '/v2' ? 'border-[#BBBFCA]' : ''}`}>
-                    <Image
-                        src={Logo}
-                        width={147}
-                        height={28}
-                        alt='Icon'
-                        className='w-[147px] h-7 object-contain '
-                    />
+                    <Link href='/'>
+                        <Image
+                            src={Logo}
+                            width={147}
+                            height={28}
+                            alt='Logo'
+                            className='w-[147px] h-7 object-contain '
+                        />
+                    </Link>
+
                 </div>
 
                 {/* Desktop Nav */}
