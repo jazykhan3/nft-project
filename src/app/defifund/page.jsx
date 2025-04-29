@@ -1,35 +1,21 @@
 import Footer from '@/app/components/footer/footer'
 import Header from '@/app/components/header/header'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import ForwardArrow from '../../../public/assets/images/forward-arrow.png'
 import ToprightIcon from '../../../public/assets/images/top-right-triangle.png';
 import TopLeftTriangle from '../../../public/assets/images/top-left-triangle.png'
 import BottomleftAngle from '../../../public/assets/images/bottom-left-triangle.png'
 import BottomRightTriangle from '../../../public/assets/images/bottom-right-triangle.png'
 import PersonShareImage from '../../../public/assets/images/share-icon.png'
-import MapIconChoose from '../../../public/assets/images/because-are.png'
-import CarbonLogo from '../../../public/assets/images/carbonLogo.png'
-import WaterReliefLogo from '../../../public/assets/images/waterreliefLogo.png'
-import PellarLogo from '../../../public/assets/images/pellarLogo.png'
-import NextGenLogo from '../../../public/assets/images/nextgen-Logo.png'
 import handGroup from '../../../public/assets/images/handGroup.png';
-import financeImage from '../../../public/assets/images/finance-image.png';
-import technoligicalImage from '../../../public/assets/images/technoligical-image.png';
-import socialImage from '../../../public/assets/images/social-image.png';
 import FundPerformanceImage from '../../../public/assets/images/funds-performance.png'
-import MultiCardCarouselEpertise from '@/app/components/expertiseSlider/expertiseSlider'
-import MultiCardCarouselBrands from '@/app/components/brandSlider/brandSlider'
-import MultiCardCarouselEpertiseBrands from '@/app/components/expertiseSlider/brandsexpertiseSlider'
 import growthLogo from '../../../public/assets/images/growth-icon.png';
 import assettradeLogo from '../../../public/assets/images/asset-trade.png';
 import assetmanageLogo from '../../../public/assets/images/asset-manage.png';
-import blockchainLogo from '../../../public/assets/images/blockchain-icon.png';
 import CryptoCard from './CryptoCard'
 
 
-const DefiFund = () => {
+const DefiFund = () => {  
   return (
     <>
       <Header />
@@ -110,7 +96,7 @@ const DefiFund = () => {
             Aweh Ventures institutional-grade DeFi products run on blockchain technology and provide investors with a unique range of strategies for a variety of risk appetites.
           </p>
         </div>
-        <div className=' border-s border-e border-[#5D5D5D] grid grid-cols-3 gap-5 py-5'>
+        <div className=' border-s border-e border-[#5D5D5D] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-5'>
           <div className='flex justify-center items-center px-6'>
             <CryptoCard />
           </div>

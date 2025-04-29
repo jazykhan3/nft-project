@@ -5,12 +5,14 @@ import BotomLeftIcon from '../../../../public/assets/images/green-arrow-angle.pn
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import './slider.scss';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
-const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navigation = false }) => { // Accept navigation prop
+const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
     const router = useRouter();
+    const pathname = usePathname();
+
     return (
-        <div className="multiitems-slider relative border border-[#5D5D5D] py-3 bg-[#1D1D1D] px-4"> {/* Add relative to position custom icons */}
+        <div className={`multiitems-slider relative border py-3 px-4 ${pathname === '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D] bg-[#1D1D1D]'}`}> {/* Add relative to position custom icons */}
             <Swiper
                 loop={true}
                 autoplay={{
@@ -39,7 +41,7 @@ const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navi
                 {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => ( */}
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className='text-sm font-medium text-[#D2E5EE] m-0 uppercase flex items-center gap-2'>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -57,7 +59,7 @@ const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navi
 
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className='text-sm font-medium text-[#D2E5EE] m-0 uppercase flex items-center gap-2'>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -73,7 +75,7 @@ const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navi
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className='text-sm font-medium text-[#D2E5EE] m-0 uppercase flex items-center gap-2'>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -89,7 +91,7 @@ const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navi
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className='text-sm font-medium text-[#D2E5EE] m-0 uppercase flex items-center gap-2'>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -105,7 +107,7 @@ const MultiCardCarouselEpertiseBrands = ({ sectionTitle, customclass, path, navi
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className='text-sm font-medium text-[#D2E5EE] m-0 uppercase flex items-center gap-2'>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}

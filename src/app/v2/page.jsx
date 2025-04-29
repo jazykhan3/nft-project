@@ -25,22 +25,21 @@ import MultiCardCarouselEpertiseBrands from '@/app/components/expertiseSlider/br
 import FLIGHTFUNDLOGOWHITE from '../../../public/assets/images/FLIGHTFUNDLOGOWHITE.png'
 import HarLogo from '../../../public/assets/images/har.png'
 
-
-const FrontPage = () => {
+const FrontPageV2 = () => {
   return (
-    <>
+    <div className='bg-[#495464]'>
       <Header />
       {/* Top Banner Section */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-b border-s border-e border-[#5D5D5D]'>
+        <div className='border-b border-s border-e border-[#BBBFCA]'>
           <div className=' flex md:flex-row flex-col-reverse gap-0'>
             <div className='md:w-[calc(55%+6px)] w-full flex flex-col justify-between'>
               <div className='lg:px-7 md:px-4 px-2  lg:pt-24 md:pt-18 sm:pt-14 pt-8 lg:pb-12 md:pb-9 pb-7'>
-                <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
+                <h1 className='text-[white] lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
                   A Single Family Office Nurturing Innovation and Entrepreneurship
                 </h1>
                 <div className='relative lg:px-10 md:px-8 sm:px-6 px-4 py-4'>
-                  <p className='text-[#F0F2F5] font-light text-sm m-0 max-w-[630px]  mx-auto relative'>
+                  <p className='text-[white] font-light text-sm m-0 max-w-[630px]  mx-auto relative'>
                     We aim to grow our businesses and brands collectively, through a culture of innovation and entrepreneurship. The overall goal is to make a meaningful impact on society through our mission of constant growth and development.
                   </p>
                   <Image
@@ -78,7 +77,7 @@ const FrontPage = () => {
                 </div>
               </div>
             </div>
-            <div className='md:w-[calc(45%-6px)] w-full md:border-s border-s-0 md:border-b-0 border-b  border-[#5D5D5D]'>
+            <div className='md:w-[calc(45%-6px)] w-full md:border-s border-s-0 md:border-b-0 border-b  border-[#BBBFCA]'>
               <Image
                 src={bgMaskImage}
                 // width={620}
@@ -92,9 +91,9 @@ const FrontPage = () => {
       </div>
       {/* Vision to Success  */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-b border-s border-e border-[#5D5D5D]'>
+        <div className='border-b border-s border-e border-[#BBBFCA]'>
           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-0'>
-            <div className='relative lg:border-e border-e-0 lg:border-b-0 border-b  border-[#5D5D5D] flex flex-col justify-between lg:col-span-1 col-span-full'>
+            <div className='relative lg:border-e border-e-0 lg:border-b-0 border-b  border-[#BBBFCA] flex flex-col justify-between lg:col-span-1 col-span-full'>
               <span className='p-7 block'>
                 <h3 className='sm:max-w-[250px] text-white font-normal md:text-[22px] text-[20px] m-0 leading-7 mt-4' >
                   From Vision <br />to Market Success
@@ -115,22 +114,22 @@ const FrontPage = () => {
               </Link>
             </div>
             <div className='col-span-2 grid md:grid-cols-3 grid-cols-1'>
-              <div className='relative md:border-e border-e-0 border-[#5D5D5D] flex flex-col justify-between lg:h-[270px] md:h-[200px] h-auto'>
+              <div className='relative md:border-e border-e-0 border-[#BBBFCA] flex flex-col justify-between lg:h-[270px] md:h-[200px] h-auto'>
                 <span className='p-7 flex-grow flex items-end sm:pt-7 pt-10 md:pb-7 pb-0 md:justify-start justify-center'>
                   <h3 className='text-white font-bold text-[36px] m-0 leading-7 md:text-left text-center' >
                     1.585B
                   </h3>
                 </span>
                 <p
-                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 md:border-b-0 border-b border-[#5D5D5D] h-fit text-white font-medium text-xs py-4 px-7 w-full md:justify-start justify-center items-center '
+                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 md:border-b-0 border-b border-[#BBBFCA] h-fit text-white font-medium text-xs py-4 px-7 w-full md:justify-start justify-center items-center '
                 >
                   Explore Our Portfolio
                 </p>
               </div>
-              <div className='col-span-2 relative  border-e-0 border-[#5D5D5D] flex flex-col justify-between'>
+              <div className='col-span-2 relative  border-e-0 border-[#BBBFCA] flex flex-col justify-between'>
                 <div className='py-7 sm:px-7 px-4 flex-grow flex justify-between gap-3 items-end'>
                   <div className='flex gap-2 flex-col'>
-                    <p className='text-[#C3C3C3] uppercase font-light text-[12px] flex items-center gap-2 m-0'>
+                    <p className='text-[#F4F4F2] uppercase font-light text-[12px] flex items-center gap-2 m-0'>
                       <Image
                         src={BottomleftAngle}
                         width={10}
@@ -145,7 +144,7 @@ const FrontPage = () => {
                     </h3>
                   </div>
                   <div className='flex gap-2 flex-col'>
-                    <p className='text-[#C3C3C3] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
+                    <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
                       <Image
                         src={BottomleftAngle}
                         width={10}
@@ -160,7 +159,7 @@ const FrontPage = () => {
                     </h3>
                   </div>
                   <div className='flex gap-2 flex-col'>
-                    <p className='text-[#C3C3C3] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
+                    <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
                       <Image
                         src={BottomleftAngle}
                         width={10}
@@ -176,7 +175,7 @@ const FrontPage = () => {
                   </div>
                 </div>
                 <p
-                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 border-[#5D5D5D] h-fit text-white font-medium text-xs py-4 px-7 md:pt-4 pt-0 w-full justify-start items-center '
+                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 border-[#BBBFCA] h-fit text-white font-medium text-xs py-4 px-7 md:pt-4 pt-0 w-full justify-start items-center '
                 >
                   Notable project
                 </p>
@@ -200,9 +199,9 @@ const FrontPage = () => {
       </div>
       {/* Scaling brands  */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-b border-s border-e border-[#5D5D5D]'>
+        <div className='border-b border-s border-e border-[#BBBFCA]'>
           <div className='grid md:grid-cols-3 grid-cols-1 gap-0'>
-            <div className='relative p-10 md:border-e border-e-0 border-[#5D5D5D] flex items-center justify-center'>
+            <div className='relative p-10 md:border-e border-e-0 border-[#BBBFCA] flex items-center justify-center'>
               {/* Top left  */}
               <Image
                 src={TopLeftTriangle}
@@ -248,7 +247,7 @@ const FrontPage = () => {
               <h1 className='max-w-[613px] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
                 Scaling Brands Through Shared Skills
               </h1>
-              <p className='text-[#F0F2F5] font-light text-sm m-0 max-w-[810px]'>
+              <p className='text-[#F4F4F2] font-light text-sm m-0 max-w-[810px]'>
                 Our unique hands-on approach does more than simply invest in brands. We apply founder-led Web3 experience to help innovators build a thriving digital business.
                 <br /><br />
                 We have built a large network in the blockchain sector, which we use to strategically grow businesses from the idea stage to listing.
@@ -258,13 +257,13 @@ const FrontPage = () => {
         </div>
       </div>
       {/* Our Vision  */}
-      <div id="mission" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#5D5D5D] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
+      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+        <h1 className='border-s border-e border-b border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
           Our Vision</h1>
-        <div className='border-s border-e border-b-0 border-[#5D5D5D]'>
+        <div className='border-s border-e border-b-0 border-[#BBBFCA]'>
           <div className='flex lg:flex-row flex-col-reverse gap-8 md:px-5 sm:px-3 px-2 lg:py-12 md:py-9 sm:py-7 py-5'>
             <div className='lg:max-w-[365px] w-full lg:pt-0 pt-7'>
-              <p className='text-[#F0F2F5] font-light text-sm m-0 ' >
+              <p className='text-[#F4F4F2] font-light text-sm m-0 ' >
                 At our core, we focus on collective innovation and entrepreneurship. It helps us achieve three main goals: growing wealth, encouraging innovation, and making a real impact on society. We focus on more than just the bottom line, aiming to create something lasting for both our ventures and the world around us.
                 <br /><br />
                 When we focus on creating value — financial, technological, and social — the pieces naturally fall into place and we have the track record to prove it.
@@ -272,7 +271,7 @@ const FrontPage = () => {
             </div>
             <div className='flex-grow grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-5 place-items-center'>
               <div className=''>
-                <div className='max-w-[236px] max-h-[236px] border border-[#5D5D5D]'>
+                <div className='max-w-[236px] max-h-[236px] border border-[#BBBFCA]'>
                   <Image
                     src={financeImage}
                     width={236}
@@ -281,7 +280,7 @@ const FrontPage = () => {
                     className='w-[236px] h-[236px] object-contain w-full'
                   />
                 </div>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
+                <h2 className='text-[#F4F4F2] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -293,7 +292,7 @@ const FrontPage = () => {
                 </h2>
               </div>
               <div className=''>
-                <div className='max-w-[236px] max-h-[236px] border border-[#5D5D5D]'>
+                <div className='max-w-[236px] max-h-[236px] border border-[#BBBFCA]'>
                   <Image
                     src={technoligicalImage}
                     width={236}
@@ -302,7 +301,7 @@ const FrontPage = () => {
                     className='w-[236px] h-[236px] object-contain w-full'
                   />
                 </div>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
+                <h2 className='text-[#F4F4F2] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -314,7 +313,7 @@ const FrontPage = () => {
                 </h2>
               </div>
               <div className=''>
-                <div className='max-w-[236px] max-h-[236px] border border-[#5D5D5D]'>
+                <div className='max-w-[236px] max-h-[236px] border border-[#BBBFCA]'>
                   <Image
                     src={socialImage}
                     width={236}
@@ -323,7 +322,7 @@ const FrontPage = () => {
                     className='w-[236px] h-[236px] object-contain w-full'
                   />
                 </div>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
+                <h2 className='text-[#F4F4F2] font-medium text-[16px] flex items-center gap-2 mt-2 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -342,14 +341,14 @@ const FrontPage = () => {
         <MultiCardCarouselEpertiseBrands />
       </div>
       {/* Our Expertise  */}
-      <div id="expertise" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+      <div id="#expertise" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <MultiCardCarouselEpertise sectionTitle="Our Expertise" customclass="expertise" path='' navigation={true} />
       </div>
       {/* Our Values  */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#5D5D5D] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
+        <h1 className='border-s border-e border-b border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
           Our Values</h1>
-        <div className='border-s border-e border-b border-[#5D5D5D]'>
+        <div className='border-s border-e border-b border-[#BBBFCA]'>
           <div className='grid md:grid-cols-3 grid-cols-1 gap-0'>
             <div>
               <Image
@@ -360,9 +359,9 @@ const FrontPage = () => {
                 className="object-contain w-full h-full"
               />
             </div>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-0 col-span-2 border-[#5D5D5D] md:border-t-0 border-t'>
-              <div className='px-6 py-7 border border-t-0 md:border-s border-s-0 md:border-e border-e-0 border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-0 col-span-2 border-[#BBBFCA] md:border-t-0 border-t'>
+              <div className='px-6 py-7 border border-t-0 md:border-s border-s-0 md:border-e border-e-0 border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -372,12 +371,12 @@ const FrontPage = () => {
                   />
                   <span>Integrity</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   We follow an ethos of personal responsibility and reliability
                 </p>
               </div>
-              <div className='px-6 py-7 border-b border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+              <div className='px-6 py-7 border-b border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -387,12 +386,12 @@ const FrontPage = () => {
                   />
                   <span>Transparency</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   We’re an open book, sharing data freely with our brands
                 </p>
               </div>
-              <div className='px-6 py-7 border border-t-0 md:border-s border-s-0 md:border-e border-e-0 border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+              <div className='px-6 py-7 border border-t-0 md:border-s border-s-0 md:border-e border-e-0 border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -402,12 +401,12 @@ const FrontPage = () => {
                   />
                   <span>Simplicity</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   Jargon-free, clear, and straightforward communication
                 </p>
               </div>
-              <div className='px-6 py-7 border-b border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+              <div className='px-6 py-7 border-b border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -417,12 +416,12 @@ const FrontPage = () => {
                   />
                   <span>Performance</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   Performance-driven to get rapid results for our brands
                 </p>
               </div>
-              <div className='px-6 py-7 border border-t-0 md:border-b-0 border-b md:border-s border-s-0 md:border-e border-e-0 border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+              <div className='px-6 py-7 border border-t-0 md:border-b-0 border-b md:border-s border-s-0 md:border-e border-e-0 border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -432,12 +431,12 @@ const FrontPage = () => {
                   />
                   <span>Loyalty</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   We’re loyal to our brands and strongly believe in shared growth
                 </p>
               </div>
-              <div className='px-6 py-7 border-0 border-[#5D5D5D]'>
-                <h2 className='text-[#F0F2F5] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
+              <div className='px-6 py-7 border-0 border-[#BBBFCA]'>
+                <h2 className='text-[white] font-medium text-[16px] flex items-center gap-2 mb-4 uppercase'>
                   <Image
                     src={BottomleftAngle}
                     width={12}
@@ -447,7 +446,7 @@ const FrontPage = () => {
                   />
                   <span>Innovation</span>
                 </h2>
-                <p className='text-[#F0F2F5] font-light text-sm m-0'>
+                <p className='text-[#F4F4F2] font-light text-sm m-0'>
                   We’re always looking for solutions to problems and better ways of doing things
                 </p>
               </div>
@@ -456,14 +455,14 @@ const FrontPage = () => {
         </div>
       </div>
       {/* Our Partners  */}
-      <div id="partners" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-s border-e border-b border-[#5D5D5D] lg:px-6 md:px-4 px-0 lg:py-8 md:py-7 py-6'>
+      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+        <div className='border-s border-e border-b border-[#BBBFCA] lg:px-6 md:px-4 px-0 lg:py-8 md:py-7 py-6'>
           <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-4 md:gap-2 gap-0'>
             <div className='flex md:items-end items-center'>
               <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
                 Our Partners</h1>
             </div>
-            <div className='border border-[#5D5D5D] md:border-b border-b-0 md:border-e border-e-0 relative'>
+            <div className='border border-[#BBBFCA] md:border-b border-b-0 md:border-e border-e-0 relative'>
               <Image
                 height={12}
                 width={12}
@@ -482,12 +481,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://carbonventures.io/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='border md:border-e border-e-0 border-[#5D5D5D] md:border-s border-s-0 relative'>
+            <div className='border md:border-e border-e-0 border-[#BBBFCA] md:border-s border-s-0 relative'>
               <Image
                 height={12}
                 width={12}
@@ -506,12 +505,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://waterrelief.org/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='border border-[#5D5D5D] md:border-e border-e-0 relative'>
+            <div className='border border-[#BBBFCA] md:border-e border-e-0 relative'>
               <Image
                 height={12}
                 width={12}
@@ -530,12 +529,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://pellar.io/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='border md:border-t border-t-0 md:border-e border-e-0 md:border-s border-s-0 border-[#5D5D5D] relative'>
+            <div className='border md:border-t border-t-0 md:border-e border-e-0 md:border-s border-s-0 border-[#BBBFCA] relative'>
               <Image
                 height={12}
                 width={12}
@@ -554,12 +553,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://nextgenvisionmedia.com/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='border md:border-t border-t-0 border-[#5D5D5D] md:border-e border-e-0 relative'>
+            <div className='border md:border-t border-t-0 border-[#BBBFCA] md:border-e border-e-0 relative'>
               <Image
                 height={12}
                 width={12}
@@ -578,12 +577,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://flightfund.com/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='border md:border-t border-t-0 border-e md:border-s border-s-0 border-[#5D5D5D] relative'>
+            <div className='border md:border-t border-t-0 border-e md:border-s border-s-0 border-[#BBBFCA] relative'>
               <Image
                 height={12}
                 width={12}
@@ -602,12 +601,12 @@ const FrontPage = () => {
               </div>
               <Link
                 href='https://www.hartmanncapital.com/'
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
             </div>
-            <div className='hidden border md:border-t border-t-0 border-[#5D5D5D] md:border-e border-e-0 relative'>
+            <div className='hidden border md:border-t border-t-0 border-[#BBBFCA] md:border-e border-e-0 relative'>
               <Image
                 height={12}
                 width={12}
@@ -626,7 +625,7 @@ const FrontPage = () => {
               </div>
               <Link
                 href=''
-                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase group-hover:border-t-0 border-t border-[#5D5D5D]'
+                className='text-white font-normal text-sm flex gap-2.5 p-4 w-full hover:bg-[#336DFF] justify-center items-center uppercase border-t group-hover:border-[#336DFF] border-[#BBBFCA]'
               >
                 Website
               </Link>
@@ -634,16 +633,15 @@ const FrontPage = () => {
           </div>
         </div>
       </div>
-         {/* Our Brands  */}
-      <div id="brands" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#5D5D5D] uppercase text-white text-center lg:text-[70px] md:text-[60px] sm:text-[46px] text-[36px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
+      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+        <h1 className='border-s border-e border-b border-[#BBBFCA] uppercase text-white text-center lg:text-[70px] md:text-[60px] sm:text-[46px] text-[36px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
           From Vision to Market Success
         </h1>
         <MultiCardCarouselBrands sectionTitle="Our Brands" customclass="brands" path='' navigation={true} />
       </div>
-
-      <div id="join-us" className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5">
-        <div className='flex md:flex-row flex-col justify-between items-center gap-6  lg:py-12 md:py-10 pt-9 pb-0  border-e border-s border-b border-[#5D5D5D]'>
+      {/* Our Brands  */}
+      <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5">
+        <div className='flex md:flex-row flex-col justify-between items-center gap-6  lg:py-12 md:py-10 pt-9 pb-0  border-e border-s border-b border-[#BBBFCA]'>
           <p className='text-white lg:text-[20px] text-[18px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 max-w-[840px]' >
             Contact us if you believe you have a brand that fits our “Family” or would like to get in touch with one of our brands.
           </p>
@@ -664,16 +662,16 @@ const FrontPage = () => {
       </div>
       {/* Why Choose US  */}
       <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex md:flex-row flex-col">
-        <div className=' border-e border-s border-b border-[#5D5D5D]'>
+        <div className=' border-e border-s border-b border-[#BBBFCA]'>
           <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
             Why Choose Aweh Ventures?
           </h1>
           <div className='lg:px-6 md:px-4 sm:px-3 px-2 lg:pb-12 md:pb-9 sm:pb-7 pb-5'>
-            <p className='text-[#F0F2F5] font-light text-sm m-0'>
+            <p className='text-[#F4F4F2] font-light text-sm m-0'>
               We know what it takes to build and scale a digital business because we’ve been there. Our founder-led approach means we create clear roadmaps to growth.
             </p>
             <ul className='list-none lg:py-7 md:py-5 py-4'>
-              <li className='text-[#F0F2F5] font-light text-sm flex items-center gap-2 mb-4'>
+              <li className='text-[#F4F4F2] font-light text-sm flex items-center gap-2 mb-4'>
                 <Image
                   src={BottomleftAngle}
                   width={12}
@@ -683,7 +681,7 @@ const FrontPage = () => {
                 />
                 <span>Direct mentorship from industry experts</span>
               </li>
-              <li className='text-[#F0F2F5] font-light text-sm flex items-center gap-2 mb-4'>
+              <li className='text-[#F4F4F2] font-light text-sm flex items-center gap-2 mb-4'>
                 <Image
                   src={BottomleftAngle}
                   width={12}
@@ -693,7 +691,7 @@ const FrontPage = () => {
                 />
                 <span>A network of top industry contacts</span>
               </li>
-              <li className='text-[#F0F2F5] font-light text-sm flex items-center gap-2 mb-4'>
+              <li className='text-[#F4F4F2] font-light text-sm flex items-center gap-2 mb-4'>
                 <Image
                   src={BottomleftAngle}
                   width={12}
@@ -704,14 +702,14 @@ const FrontPage = () => {
                 <span>Battle-tested methods to grow digital businesses</span>
               </li>
             </ul>
-            <p className='text-[#F0F2F5] font-light text-sm m-0'>
+            <p className='text-[#F4F4F2] font-light text-sm m-0'>
               Aweh Ventures is a private family office focused on managing and growing digital brands. We grew up in households that combined business and family, which instilled in us the belief that for businesses to flourish, the motivation needs to come from the heart.
               <br /><br />
               Our values guide our decisions. We operate privately, and focus on long-term aspirations of building our businesses and brands. We operate on a philosophy of <span className='text-[#B580FC]'>“Ubuntu”</span>, a South African proverb that means <span className='text-[#B580FC]'>“I am, Because we are”.</span> Through Ubuntu we believe that we are defined by our compassion & humility towards others and apply these principles throughout our business.
             </p>
           </div>
         </div>
-        <div className='border-e md:border-l-0 border-l border-b border-[#5D5D5D] lg:p-6 md:p-5 p-4 flex items-center justify-center'>
+        <div className='border-e md:border-l-0 border-l border-b border-[#BBBFCA] lg:p-6 md:p-5 p-4 flex items-center justify-center'>
           <Image
             src={MapIconChoose}
             width={415}
@@ -723,15 +721,15 @@ const FrontPage = () => {
       </div>
       {/* Our Edge  */}
       <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 ">
-        <div className=' border-e border-s border-[#5D5D5D]'>
+        <div className=' border-e border-s border-[#BBBFCA]'>
           <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >Our Edge</h1>
-          <div className='flex lg:gap-20 md:gap-16 sm:gap-10 gap-6 lg:px-6 md:px-4 sm:px-3 px-2 flex-col md:flex-row lg:py-12 md:py-8 py-6 border-t border-[#5D5D5D]'>
-            <p className='text-[#F0F2F5] font-light text-sm m-0'>
+          <div className='flex lg:gap-20 md:gap-16 sm:gap-10 gap-6 lg:px-6 md:px-4 sm:px-3 px-2 flex-col md:flex-row lg:py-12 md:py-8 py-6 border-t border-[#BBBFCA]'>
+            <p className='text-[#F4F4F2] font-light text-sm m-0'>
               Aweh Ventures is unique in the way we apply passion and hard work to build brands. Our large collective network shares skills from a variety of sectors, helping each other learn and succeed, even through the toughest of challenges.
               <br /><br />
               Aweh Ventures stands out due to our founder-led Web3 experience, successfully operating and exiting two blockchain companies.
             </p>
-            <p className='text-[#F0F2F5] font-light text-sm m-0'>
+            <p className='text-[#F4F4F2] font-light text-sm m-0'>
               This gives us valuable insights and operational expertise that many traditional investors lack. We have built a thriving network in the blockchain sector, perfectly positioning us to offer strategic advice and investment to businesses entering the digital space.
             </p>
           </div>
@@ -752,7 +750,7 @@ const FrontPage = () => {
 
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
-export default FrontPage
+export default FrontPageV2
