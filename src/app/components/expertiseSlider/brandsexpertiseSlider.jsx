@@ -12,7 +12,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
     const pathname = usePathname();
 
     return (
-        <div className={`multiitems-slider relative border py-3 px-4 ${pathname === '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D] bg-[#1D1D1D]'}`}> {/* Add relative to position custom icons */}
+        <div className={`multiitems-slider relative border py-3 px-4 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D] bg-[#1D1D1D]'}`}> {/* Add relative to position custom icons */}
             <Swiper
                 loop={true}
                 autoplay={{
@@ -41,7 +41,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
                 {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => ( */}
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -59,7 +59,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
 
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -75,7 +75,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -91,7 +91,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -107,7 +107,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className="sliding-item relative">
-                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/v2' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
+                        <p className={`text-sm font-medium m-0 uppercase flex items-center gap-2 ${pathname === '/' ? 'text-[#F4F4F2]' : 'text-[#D2E5EE]'}`}>
                             <Image
                                 height={12}
                                 width={12}

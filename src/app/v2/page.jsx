@@ -62,7 +62,7 @@ const FrontPageV2 = () => {
                 <div className=' md:col-span-3 md:block hidden'></div>
                 <div className=' md:col-span-2 col-span-full'>
                   <Link
-                    href=''
+                    href='/web3-portfolios'
                     className='uppercase h-fit text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
                   >
                     Explore Our Portfolio
@@ -100,7 +100,7 @@ const FrontPageV2 = () => {
                 </h3>
               </span>
               <Link
-                href=''
+                href='/web3-portfolios'
                 className='uppercase h-fit text-white font-medium text-sm lg:flex hidden gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
               >
                 Explore Our Portfolio
@@ -182,7 +182,7 @@ const FrontPageV2 = () => {
               </div>
             </div>
             <Link
-              href=''
+              href='/web3-portfolios'
               className='col-span-full uppercase h-fit text-white font-medium text-sm lg:hidden flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
             >
               Explore Our Portfolio
@@ -257,7 +257,7 @@ const FrontPageV2 = () => {
         </div>
       </div>
       {/* Our Vision  */}
-      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+      <div id="mission" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <h1 className='border-s border-e border-b border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
           Our Vision</h1>
         <div className='border-s border-e border-b-0 border-[#BBBFCA]'>
@@ -341,7 +341,7 @@ const FrontPageV2 = () => {
         <MultiCardCarouselEpertiseBrands />
       </div>
       {/* Our Expertise  */}
-      <div id="#expertise" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+      <div id="expertise" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <MultiCardCarouselEpertise sectionTitle="Our Expertise" customclass="expertise" path='' navigation={true} />
       </div>
       {/* Our Values  */}
@@ -455,7 +455,7 @@ const FrontPageV2 = () => {
         </div>
       </div>
       {/* Our Partners  */}
-      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+      <div id="partners" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <div className='border-s border-e border-b border-[#BBBFCA] lg:px-6 md:px-4 px-0 lg:py-8 md:py-7 py-6'>
           <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-4 md:gap-2 gap-0'>
             <div className='flex md:items-end items-center'>
@@ -633,13 +633,13 @@ const FrontPageV2 = () => {
           </div>
         </div>
       </div>
-      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+      {/* Our Brands  */}
+      <div id="brands" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <h1 className='border-s border-e border-b border-[#BBBFCA] uppercase text-white text-center lg:text-[70px] md:text-[60px] sm:text-[46px] text-[36px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
           From Vision to Market Success
         </h1>
         <MultiCardCarouselBrands sectionTitle="Our Brands" customclass="brands" path='' navigation={true} />
       </div>
-      {/* Our Brands  */}
       <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5">
         <div className='flex md:flex-row flex-col justify-between items-center gap-6  lg:py-12 md:py-10 pt-9 pb-0  border-e border-s border-b border-[#BBBFCA]'>
           <p className='text-white lg:text-[20px] text-[18px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 max-w-[840px]' >

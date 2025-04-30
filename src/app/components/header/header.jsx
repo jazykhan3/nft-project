@@ -16,13 +16,12 @@ const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navItems = [
         { name: 'Expertise', link: '#expertise' },
-        // { name: 'V2', link: '/v2' },
         { name: 'Defi Fund', link: '/defifund' },
-        { name: 'Web3 Portfolio', link: '#web3portfolio' },
+        { name: 'Web3 Portfolio', link: '/web3-portfolios' },
         { name: 'Partners', link: '#partners' },
         { name: 'Brands', link: '#brands' },
         { name: 'Mission', link: '#mission' },
-        { name: 'Join-Us', link: '#join-us' },
+        { name: 'Join-Us', link: '/join-us' },
         { name: 'Contact Us', link: '#' },
     ];
 
@@ -36,10 +35,10 @@ const Header = () => {
     };
 
     return (
-        <header className={`border-b h-[70px] ${pathname == '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+        <header className={`border-b h-[70px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
             <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex items-center justify-between h-full ">
                 {/* Logo */}
-                <div className={`h-full flex items-center pe-7 border-e border-[#5D5D5D] ${pathname == '/v2' ? 'border-[#BBBFCA]' : ''}`}>
+                <div className={`h-full flex items-center pe-7 border-e border-[#5D5D5D] ${pathname === '/' ? 'border-[#BBBFCA]' : ''}`}>
                     <Link href='/'>
                         <Image
                             src={Logo}
@@ -53,7 +52,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className={`h-full items-center border-e border-[#5D5D5D] hidden lg:flex text-sm uppercase tracking-wide ${pathname == '/v2' ? 'border-[#BBBFCA]' : ''} ${style.mainMenu}`}>
+                <nav className={`h-full items-center border-e border-[#5D5D5D] hidden lg:flex text-sm uppercase tracking-wide ${pathname === '/' ? 'border-[#BBBFCA]' : ''} ${style.mainMenu}`}>
                     {navItems.map((item, idx) => (
                         <Link
                             onClick={() => handleItemClick(item)}

@@ -14,6 +14,8 @@ import assettradeLogo from '../../../public/assets/images/asset-trade.png';
 import assetmanageLogo from '../../../public/assets/images/asset-manage.png';
 import CryptoCard from './CryptoCard'
 import Link from 'next/link';
+import FundPerformanceChart from './FundPerformanceChart';
+import MultiCardCarouselEpertiseDefiFund from '../components/expertiseSlider/expertiseSliderDefiFund';
 
 
 const DefiFund = () => {
@@ -54,39 +56,24 @@ const DefiFund = () => {
       </div>
       {/* On Chain Fuds */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-b border-s border-e border-[#5D5D5D] grid lg:grid-cols-5 md:grid-cols-4 grid-cols-1 lg:gap-5 md:gap-3 gap-0'>
-          <div className='lg:px-7 md:px-4 px-2 py-4 lg:col-span-3 md:col-span-2 col-span-full md:order-1 order-2'>
-            <p className='md:block hidden max-w-[650px] text-white font-medium text-[24px] m-0'>
-              On-Chain Funds Designed for Every Risk Level
-              A Proven History of Success Over 5 Years
-            </p>
+        <div className='lg:px-7 md:px-4 px-2 py-4 border-b border-s border-e border-[#5D5D5D]'>
+          <p className=' text-white font-medium text-[24px] m-0 my-3 leading-6'>
+            On-Chain Funds Designed for Every Risk Level
+            A Proven History of Success Over 5 Years
+          </p>
+          <ul className='list-disc ml-7 mb-5'>
+            <li className='text-[#F0F2F5] font-light text-[16px]'>
+              Average Annual APY of approximately 22.23% since 2020
+            </li>
+            <li className='text-[#F0F2F5] font-light text-[16px]'>
+              $5 Million in Assets Under Management
+            </li>
+            <li className='text-[#F0F2F5] font-light text-[16px]'>
+              Over 10 Years of Experience from Experts at Binance and Capgemini
+            </li>
 
-            <Image
-              src={FundPerformanceImage}
-              width={710}
-              height={400}
-              alt='FundPerformanceImage'
-              className=' w-full object-contain mt-3'
-            />
-          </div>
-          <div className='col-span-2 flex flex-col items-center justify-center lg:px-7 md:px-4 px-2 md:order-2 order-1'>
-            <p className='md:hidden block text-white font-medium text-[24px] m-0 my-3 leading-6'>
-              On-Chain Funds Designed for Every Risk Level
-              A Proven History of Success Over 5 Years
-            </p>
-            <ul className='list-disc md:ps-0 ps-5'>
-              <li className='text-white font-medium lg:text-[24px] md:text-[22px] text-[18px]'>
-                Average Annual APY of approximately 22.23% since 2020
-              </li>
-              <li className='text-white font-medium text-[24px]'>
-                $5 Million in Assets Under Management
-              </li>
-              <li className='text-white font-medium text-[24px]'>
-                Over 10 Years of Experience from Experts at Binance and Capgemini
-              </li>
-
-            </ul>
-          </div>
+          </ul>
+          <FundPerformanceChart />
         </div>
       </div>
       {/* Our Funds */}
@@ -234,88 +221,8 @@ const DefiFund = () => {
 
       {/* Benifits for investers */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-[#5D5D5D] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
-          Benefits For Investors
-        </h1>
-        <div className='border border-[#5D5D5D]'>
-          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-0'>
-            <div className="relative flex flex-col md:border-e border-e-0 lg:border-b-0 border-b border-[#5D5D5D] py-6 px-7">
-              <div className="pt-14 pb-8 ">
-                <Image
-                  height={12}
-                  width={12}
-                  src={ToprightIcon}
-                  alt="ToprightIcon"
-                  className="w-3 h-3 object-contain absolute top-6 right-6"
-                />
-                <Image
-                  width={90}
-                  height={60}
-                  src={growthLogo}
-                  alt="Growth"
-                  className="max-w-[90px] max-h-[60px] object-contain"
-                />
-              </div>
-              <div className="">
-                <h3 className='text-[22px] font-normal text-white mb-6 uppercase leading-7'>Diverse Crypto <br />Exposure</h3>
-                <p className="text-sm font-light text-[#F0F2F5] mb-2">
-                  Minimise operational costs while gaining exposure to crypto markets through active rebalancing and DeFi strategies.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex flex-col lg:border-e border-e-0 lg:border-b-0 border-b border-[#5D5D5D] py-6 px-7">
-              <div className="pt-14 pb-8 ">
-                <Image
-                  height={12}
-                  width={12}
-                  src={ToprightIcon}
-                  alt="ToprightIcon"
-                  className="w-3 h-3 object-contain absolute top-6 right-6"
-                />
-                <Image
-                  width={60}
-                  height={60}
-                  src={assettradeLogo}
-                  alt="Digital Asset Trading"
-                  className="max-w-[60px] max-h-[60px] object-contain"
-                />
-              </div>
-              <div className="">
-                <h3 className='text-[22px] font-normal text-white mb-6 uppercase leading-7'>Efficient Portfolio <br />Management</h3>
-                <p className="text-sm font-light text-[#F0F2F5] mb-2">
-                  Leverage the Ethereum blockchain for efficient and transparent portfolio management.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex flex-col lg:border-e-0 md:border-e border-e-0 border-[#5D5D5D] py-6 px-7">
-              <div className="pt-14 pb-8 ">
-                <Image
-                  height={12}
-                  width={12}
-                  src={ToprightIcon}
-                  alt="ToprightIcon"
-                  className="w-3 h-3 object-contain absolute top-6 right-6"
-                />
-                <Image
-                  width={90}
-                  height={60}
-                  src={assetmanageLogo}
-                  alt="Asset Management"
-                  className="max-w-[90px] max-h-[60px] object-contain"
-                />
-              </div>
-              <div className="">
-                <h3 className='text-[22px] font-normal text-white mb-6 uppercase leading-7'>On-Chain <br />Transparency</h3>
-                <p className="text-sm font-light text-[#F0F2F5] mb-2">
-                  Benefit from on-chain transparency and auditability via the Enzyme protocol.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <MultiCardCarouselEpertiseDefiFund sectionTitle="Benefits For Investors" customclass="investers" path='' navigation={true} />
       </div>
-
-
       {/* Learn More About our offerings */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <h1 className='border-s border-e border-b border-[#5D5D5D] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
