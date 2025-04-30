@@ -16,7 +16,7 @@ const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navItems = [
         { name: 'Expertise', link: '#expertise' },
-        { name: 'V2', link: '/v2' },
+        // { name: 'V2', link: '/v2' },
         { name: 'Defi Fund', link: '/defifund' },
         { name: 'Web3 Portfolio', link: '#web3portfolio' },
         { name: 'Partners', link: '#partners' },
