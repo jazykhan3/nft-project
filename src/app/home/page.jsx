@@ -63,7 +63,7 @@ const FrontPage = () => {
                 <div className=' md:col-span-3 md:block hidden'></div>
                 <div className=' md:col-span-2 col-span-full'>
                   <Link
-                    href=''
+                    href='/web3-portfolios'
                     className='uppercase h-fit text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
                   >
                     Explore Our Portfolio
@@ -101,7 +101,7 @@ const FrontPage = () => {
                 </h3>
               </span>
               <Link
-                href=''
+                href='/web3-portfolios'
                 className='uppercase h-fit text-white font-medium text-sm lg:flex hidden gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
               >
                 Explore Our Portfolio
@@ -183,7 +183,7 @@ const FrontPage = () => {
               </div>
             </div>
             <Link
-              href=''
+              href='/web3-portfolios'
               className='col-span-full uppercase h-fit text-white font-medium text-sm lg:hidden flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
             >
               Explore Our Portfolio
@@ -192,7 +192,7 @@ const FrontPage = () => {
                 width={12}
                 height={12}
                 alt='Icon'
-                className='w-3 h-3 object-contain '
+                className='w-3 h-3 object-contain'
               />
             </Link>
           </div>
@@ -642,7 +642,7 @@ const FrontPage = () => {
         <MultiCardCarouselBrands sectionTitle="Our Brands" customclass="brands" path='' navigation={true} />
       </div>
 
-      <div id="join-us" className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5">
+      <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5">
         <div className='flex md:flex-row flex-col justify-between items-center gap-6  lg:py-12 md:py-10 pt-9 pb-0  border-e border-s border-b border-[#5D5D5D]'>
           <p className='text-white lg:text-[20px] text-[18px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 max-w-[840px]' >
             Contact us if you believe you have a brand that fits our “Family” or would like to get in touch with one of our brands.
