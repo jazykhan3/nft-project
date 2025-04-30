@@ -14,13 +14,13 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const navItems = [
-        { name: 'Expertise', link: '#expertise' },
+      const navItems = [
+        { name: 'Expertise', link: '/#expertise' },
         { name: 'Defi Fund', link: '/defifund' },
         { name: 'Web3 Portfolio', link: '/web3-portfolios' },
-        { name: 'Partners', link: '#partners' },
-        { name: 'Brands', link: '#brands' },
-        { name: 'Mission', link: '#mission' },
+        { name: 'Partners', link: '/#partners' },
+        { name: 'Brands', link: '/#brands' },
+        { name: 'Mission', link: '/#mission' },
         { name: 'Join-Us', link: '/join-us' },
         { name: 'Contact Us', link: '#' },
     ];
