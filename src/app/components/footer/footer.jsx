@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer className={`border-t ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+    <footer className={`border-t border-[#BBBFCA]`}>
       <div className="md:py-4 py-7 max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex md:flex-row flex-col md:gap-0.5 gap-6  items-center justify-between h-full ">
         <Link href='/'>
           <Image

@@ -22,7 +22,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
     };
 
     return (
-        <div className={`multiitems-slider-brands relative border-s border-e ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}> {/* Add relative to position custom icons */}
+        <div className={`multiitems-slider-brands relative border-s border-e border-[#BBBFCA]`}> {/* Add relative to position custom icons */}
             <div className='flex items-center justify-between lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3'>
                 <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
                     {sectionTitle}
@@ -54,15 +54,15 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                     1024: {
                         slidesPerView: 3,
                     },
-                    1200: {
-                        slidesPerView: 4,
-                    },
+                    // 1200: {
+                    //     slidesPerView: 4,
+                    // },
                 }}
             >
                 {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => ( */}
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item min-h-[400px] flex flex-col border border-s-0 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
-                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item flex flex-col border border-s-0 border-[#BBBFCA]`}>
+                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] border-[#BBBFCA]`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -80,7 +80,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
-                            <div className={`p-6 border-b flex-grow ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                            <div className={`p-6 border-b flex-grow border-[#BBBFCA]`}>
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Asset Management, Blockchain Advisory & Venture, established 2022
                                 </p>
@@ -97,8 +97,8 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                 </SwiperSlide>
 
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item min-h-[400px] flex flex-col border border-s-0 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
-                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item flex flex-col border border-s-0 border-[#BBBFCA]`}>
+                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] border-[#BBBFCA]`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -116,7 +116,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
-                            <div className={`p-6 border-b flex-grow ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                            <div className={`p-6 border-b flex-grow border-[#BBBFCA]`}>
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Fine Jewellery & Design established in 1987
                                 </p>
@@ -135,8 +135,8 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                 </SwiperSlide>
 
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item min-h-[400px] flex flex-col border border-s-0 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
-                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item flex flex-col border border-s-0 border-[#BBBFCA]`}>
+                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] border-[#BBBFCA]`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -154,7 +154,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
-                            <div className={`p-6 border-b flex-grow ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                            <div className={`p-6 border-b flex-grow border-[#BBBFCA]`}>
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Pet Wellness brand, established in 2021
                                 </p>
@@ -172,9 +172,9 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item min-h-[400px] flex flex-col border border-s-0 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
-                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                {/* <SwiperSlide className="swiper-slide-item">
+                    <div className={`sliding-item flex flex-col border border-s-0 border-[#BBBFCA]`}>
+                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] border-[#BBBFCA]`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -192,7 +192,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
-                            <div className={`p-6 border-b flex-grow ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                            <div className={`p-6 border-b flex-grow border-[#BBBFCA]`}>
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Asset Management, Blockchain Advisory & Venture, established 2022
                                 </p>
@@ -209,8 +209,8 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                 </SwiperSlide>
 
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item min-h-[400px] flex flex-col border border-s-0 hover:cursor-pointer ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
-                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item flex flex-col border border-s-0 hover:cursor-pointer border-[#BBBFCA]`}>
+                        <div className={`relative px-4 pt-14 pb-8 text-center border-b h-[130px] border-[#BBBFCA]`}>
                             <Image
                                 height={12}
                                 width={12}
@@ -229,7 +229,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
-                            <div className={`p-6 border-b flex-grow ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                            <div className={`p-6 border-b flex-grow border-[#BBBFCA]`}>
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     The Best Burger in Cape Town
 
@@ -246,7 +246,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                             </Link>
                         </div>
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
                 {/* // ))} */}
             </Swiper>

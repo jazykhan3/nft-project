@@ -22,17 +22,17 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
     };
 
     return (
-        <div className={`multiitems-slider-expertise relative border-s border-e ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}> {/* Add relative to position custom icons */}
+        <div className={`multiitems-slider-expertise relative border-s border-e border-[#BBBFCA]`}> {/* Add relative to position custom icons */}
             <div className='flex items-center justify-between lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3'>
                 <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
                     {sectionTitle}
                 </h1>
                 {navigation && ( // Conditionally render navigation buttons
                     <div className="custom-nav-buttons">
-                        <div className={`swiper-button-prev-${customclass} w-[60px] h-[60px] border py-5 px-6 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                        <div className={`swiper-button-prev-${customclass} w-[60px] h-[60px] border py-5 px-6 border-[#BBBFCA]`}>
                             <Image width={10} height={20} src={rightIcon} alt="Prev" className='rotate-180 w-[10px] h-[20px] object-contain ' />
                         </div>
-                        <div className={`swiper-button-next-${customclass} next w-[60px] h-[60px] border py-5 px-6 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                        <div className={`swiper-button-next-${customclass} next w-[60px] h-[60px] border py-5 px-6 border-[#BBBFCA]`}>
                             <Image width={10} height={20} src={rightIcon} alt="Prev" className=' w-[10px] h-[20px] object-contain ' />
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
             >
                 {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => ( */}
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}
@@ -94,7 +94,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                 </SwiperSlide>
 
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}
@@ -123,7 +123,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                 </SwiperSlide>
 
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}
@@ -151,7 +151,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}
@@ -194,7 +194,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}
@@ -222,7 +222,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
-                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+                    <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
                         <div className="pt-14 pb-8 ">
                             <Image
                                 height={12}

@@ -24,6 +24,7 @@ import MultiCardCarouselBrands from '@/app/components/brandSlider/brandSlider'
 import MultiCardCarouselEpertiseBrands from '@/app/components/expertiseSlider/brandsexpertiseSlider'
 import FLIGHTFUNDLOGOWHITE from '../../../public/assets/images/FLIGHTFUNDLOGOWHITE.png'
 import HarLogo from '../../../public/assets/images/har.png'
+import MultiCardCarouselEpertiseDefiFund from '../components/expertiseSlider/expertiseSliderDefiFund'
 
 const FrontPageV2 = () => {
   return (
@@ -36,12 +37,13 @@ const FrontPageV2 = () => {
             <div className='md:w-[calc(55%+6px)] w-full flex flex-col justify-between'>
               <div className='lg:px-7 md:px-4 px-2  lg:pt-24 md:pt-18 sm:pt-14 pt-8 lg:pb-12 md:pb-9 pb-7'>
                 <h1 className='text-[white] lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
-                  A Single Family Office Nurturing Innovation and Entrepreneurship
+                  A Private Family Office Nurturing Innovation and Entrepreneurship
                 </h1>
                 <div className='relative lg:px-10 md:px-8 sm:px-6 px-4 py-4'>
                   <p className='text-[white] font-light text-sm m-0 max-w-[630px]  mx-auto relative'>
-                    We aim to grow our businesses and brands collectively, through a culture of innovation and entrepreneurship. The overall goal is to make a meaningful impact on society through our mission of constant growth and development.
-                  </p>
+                    We invest in bold ideas and back innovative founders and support their growth, through a culture of innovation and entrepreneurship.
+                    <br /><br />
+                    If you’ve got something you think we might like. Contact us below.                  </p>
                   <Image
                     src={ToprightIcon}
                     width={12}
@@ -114,71 +116,88 @@ const FrontPageV2 = () => {
               </Link>
             </div>
             <div className='col-span-2 grid md:grid-cols-3 grid-cols-1'>
-              <div className='relative md:border-e border-e-0 border-[#BBBFCA] flex flex-col justify-between lg:h-[270px] md:h-[200px] h-auto'>
-                <span className='p-7 flex-grow flex items-end sm:pt-7 pt-10 md:pb-7 pb-0 md:justify-start justify-center'>
+              <div className='relative md:border-e border-e-0 border-[#BBBFCA] flex flex-col justify-between'>
+                <span className='py-7 px-4 flex-grow flex items-end sm:pt-7 pt-10 md:pb-7 pb-0 md:justify-start justify-center'>
                   <h3 className='text-white font-bold text-[36px] m-0 leading-7 md:text-left text-center' >
-                    1.585B
+                    $1.585B
                   </h3>
                 </span>
                 <p
-                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 md:border-b-0 border-b border-[#BBBFCA] h-fit text-white font-medium text-xs py-4 px-7 w-full md:justify-start justify-center items-center '
+                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 md:border-b-0 border-b border-[#BBBFCA] h-fit text-white font-medium text-xs px-4 py-2 flex w-full md:justify-start justify-center items-center '
                 >
-                  Explore Our Portfolio
+                  TOTAL COMBINED MARKET CAP
                 </p>
               </div>
-              <div className='col-span-2 relative  border-e-0 border-[#BBBFCA] flex flex-col justify-between'>
-                <div className='py-7 sm:px-7 px-4 flex-grow flex justify-between gap-3 items-end'>
-                  <div className='flex gap-2 flex-col'>
-                    <p className='text-[#F4F4F2] uppercase font-light text-[12px] flex items-center gap-2 m-0'>
-                      <Image
-                        src={BottomleftAngle}
-                        width={10}
-                        height={10}
-                        alt='BottomLeftTriangle'
-                        className='w-[10px] h-[10px] object-contain '
-                      />
-                      <span>Curate</span>
+              <div className='col-span-2'>
+                <div className='relative flex lg:flex-row flex-col justify-between'>
+                  <div className='flex-grow h-full'>
+                    <div className='px-4 py-4 pt-7 lg:pe-0 flex-grow flex lg:flex-wrap flex-nowrap lg:justify-start justify-between gap-y-7 gap-x-0 items-end'>
+                      <div className='flex gap-2 flex-col lg:w-full w-auto'>
+                        <p className='text-[#F4F4F2] uppercase font-light text-[12px] flex items-center gap-2 m-0'>
+                          <Image
+                            src={BottomleftAngle}
+                            width={10}
+                            height={10}
+                            alt='BottomLeftTriangle'
+                            className='w-[10px] h-[10px] object-contain '
+                          />
+                          <span>Curate</span>
+                        </p>
+                        <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
+                          2000x
+                        </h3>
+                      </div>
+                      <div className='flex gap-2 flex-col lg:w-[45%] w-auto'>
+                        <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
+                          <Image
+                            src={BottomleftAngle}
+                            width={10}
+                            height={10}
+                            alt='BottomLeftTriangle'
+                            className='w-[10px] h-[10px] object-contain '
+                          />
+                          <span>Carbon</span>
+                        </p>
+                        <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
+                          168x
+                        </h3>
+                      </div>
+                      <div className='flex gap-2 flex-col lg:w-[45%] w-auto'>
+                        <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
+                          <Image
+                            src={BottomleftAngle}
+                            width={10}
+                            height={10}
+                            alt='BottomLeftTriangle'
+                            className='w-[10px] h-[10px] object-contain '
+                          />
+                          <span>Dexcheck AI</span>
+                        </p>
+                        <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
+                          22.5x
+                        </h3>
+                      </div>
+                    </div>
+                    <p
+                      className='lg:text-left text-center uppercase min-h-[52px] lg:border-t border-t-0 lg:border-b-0 border-b border-[#BBBFCA] h-fit text-white font-medium text-xs px-4 py-2 flex w-full lg:justify-start justify-center items-center'
+                    >
+                      Notable project
                     </p>
-                    <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
-                      2000x
-                    </h3>
                   </div>
-                  <div className='flex gap-2 flex-col'>
-                    <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
-                      <Image
-                        src={BottomleftAngle}
-                        width={10}
-                        height={10}
-                        alt='BottomLeftTriangle'
-                        className='w-[10px] h-[10px] object-contain '
-                      />
-                      <span>Carbon</span>
+                  <div className='flex flex-col justify-end'>
+
+                    <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7 py-4 px-3 lg:text-left text-center' >
+                      54%+
+                    </h3>
+                    <p
+                      className='lg:text-left text-center uppercase min-h-[52px] lg:border-t border-t-0 lg:border-b-0 border-b border-[#BBBFCA] h-fit text-white font-medium text-xs px-4 py-2 flex w-full lg:justify-start justify-center items-center '
+                    >
+                      PROJECTS LAUNCHED SUCCESSFULLY
                     </p>
-                    <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
-                      168x
-                    </h3>
                   </div>
-                  <div className='flex gap-2 flex-col'>
-                    <p className='text-[#F4F4F2] font-light text-[12px] flex items-center gap-2 m-0 uppercase'>
-                      <Image
-                        src={BottomleftAngle}
-                        width={10}
-                        height={10}
-                        alt='BottomLeftTriangle'
-                        className='w-[10px] h-[10px] object-contain '
-                      />
-                      <span>Dexcheck AI</span>
-                    </p>
-                    <h3 className='text-white font-bold sm:text-[36px] text-[30px] m-0 leading-7' >
-                      22.5x
-                    </h3>
-                  </div>
+
                 </div>
-                <p
-                  className='md:text-left text-center uppercase min-h-[52px] md:border-t border-t-0 border-[#BBBFCA] h-fit text-white font-medium text-xs py-4 px-7 md:pt-4 pt-0 w-full justify-start items-center '
-                >
-                  Notable project
-                </p>
+
               </div>
             </div>
             <Link
@@ -197,7 +216,8 @@ const FrontPageV2 = () => {
           </div>
         </div>
       </div>
-      {/* Scaling brands  */}
+
+      {/* WHo we are  */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <div className='border-b border-s border-e border-[#BBBFCA]'>
           <div className='grid md:grid-cols-3 grid-cols-1 gap-0'>
@@ -245,12 +265,12 @@ const FrontPageV2 = () => {
             </div>
             <div className='col-span-2 flex flex-col gap-10 lg:px-8 md:px-6 sm:px-4 px-2 lg:py-16 md:py-12 sm:py-9 py-7 justify-center'>
               <h1 className='max-w-[613px] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
-                Scaling Brands Through Shared Skills
+                Who we are
               </h1>
               <p className='text-[#F4F4F2] font-light text-sm m-0 max-w-[810px]'>
-                Our unique hands-on approach does more than simply invest in brands. We apply founder-led Web3 experience to help innovators build a thriving digital business.
+                Aweh Ventures is founder-led with deep expertise in Web3. We have built,scaled and exited a variety of businesses, from a 5000+ cryptocurrency mining operation to the 3rd largest NFT Marketplace.Since then, we created Aweh Ventures to share this expertise and support with other founders to accelerate their growth and now are invested in 20+ companies across blockchain,Tech and other passion project industries.
                 <br /><br />
-                We have built a large network in the blockchain sector, which we use to strategically grow businesses from the idea stage to listing.
+                Aweh Ventures is founder-led with deep expertise in Web3. We have built,scaled and exited a variety of businesses, from a 5000+ cryptocurrency mining operation to the 3rd largest NFT Marketplace.Since then, we created Aweh Ventures to share this expertise and support with other founders to accelerate their growth and now are invested in 20+ companies across blockchain,Tech and other passion project industries.
               </p>
             </div>
           </div>
@@ -342,7 +362,7 @@ const FrontPageV2 = () => {
       </div>
       {/* Our Expertise  */}
       <div id="expertise" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <MultiCardCarouselEpertise sectionTitle="Our Expertise" customclass="expertise" path='' navigation={true} />
+        <MultiCardCarouselEpertiseDefiFund sectionTitle="Our Expertise" customclass="expertise" path='' navigation={true} />
       </div>
       {/* Our Values  */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
@@ -634,8 +654,8 @@ const FrontPageV2 = () => {
         </div>
       </div>
       {/* Our Brands  */}
-      <div id="brands" className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#BBBFCA] uppercase text-white text-center lg:text-[70px] md:text-[60px] sm:text-[46px] text-[36px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
+      <div id="brands" className=' max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+        <h1 className='hidden border-s border-e border-b border-[#BBBFCA] uppercase text-white text-center lg:text-[70px] md:text-[60px] sm:text-[46px] text-[36px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
           From Vision to Market Success
         </h1>
         <MultiCardCarouselBrands sectionTitle="Our Brands" customclass="brands" path='' navigation={true} />

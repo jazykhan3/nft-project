@@ -12,7 +12,7 @@ const MultiCardCarouselEpertiseBrands = ({ }) => { // Accept navigation prop
     const pathname = usePathname();
 
     return (
-        <div className={`multiitems-slider relative border py-3 px-4 ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D] bg-[#1D1D1D]'}`}> {/* Add relative to position custom icons */}
+        <div className={`multiitems-slider relative border py-3 px-4 border-[#BBBFCA]`}> {/* Add relative to position custom icons */}
             <Swiper
                 loop={true}
                 autoplay={{

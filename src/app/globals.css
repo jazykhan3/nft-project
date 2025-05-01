@@ -3,7 +3,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: rgba(20, 20, 20, 1);
+  /* --foreground: rgba(20, 20, 20, 1); */
+  --foreground: #495464;
 }
 html {
   scroll-behavior: smooth;
@@ -17,7 +18,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: rgba(20, 20, 20, 1);
+    --background:#495464;
+    /* --background: rgba(20, 20, 20, 1); */
     --foreground: #ededed;
   }
 }

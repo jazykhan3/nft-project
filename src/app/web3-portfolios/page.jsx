@@ -28,12 +28,12 @@ const Web3Portfolios = () => {
       <Header />
       {/* Top Banner Section */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#5D5D5D] uppercase text-white text-center lg:text-[62px] md:text-[50px] sm:text-[36px] text-[26px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
+        <h1 className='border-s border-e border-b border-[#BBBFCA] uppercase text-white text-center lg:text-[62px] md:text-[50px] sm:text-[36px] text-[26px] font-normal m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:py-8 md:py-7 py-6' >
           our Venture Web3 Portfolio
         </h1>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-0'>
           {/* 1 */}
-          <div className='border-[#5D5D5D] border border-t-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://carbon.website/'
               className=''
@@ -48,7 +48,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 2 */}
-          <div className='border-[#5D5D5D] border border-t-0 border-e border-s-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 border-e border-s-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://lightlink.io/'
               className=''
@@ -63,7 +63,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 3 */}
-          <div className='border-[#5D5D5D] border border-t-0 md:border-e border-e-0 md:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 md:border-e border-e-0 md:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://amped.finance/#/'
               className=''
@@ -78,7 +78,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 4 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://dexcheck.ai/app'
               className=''
@@ -93,7 +93,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 5 */}
-          <div className='border-[#5D5D5D] border border-t-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://bnktothefuture.com/'
               className=''
@@ -108,7 +108,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 6 */}
-          <div className='border-[#5D5D5D] border border-t-0 border-e border-s-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 border-e border-s-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://moonbeam.network/'
               className=''
@@ -123,7 +123,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 7 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://solana.com/'
               className=''
@@ -138,7 +138,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 8 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://www.cookie3.com/'
               className=''
@@ -153,7 +153,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 9 */}
-          <div className='border-[#5D5D5D] border border-t-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://www.velvet.capital/'
               className=''
@@ -168,7 +168,7 @@ const Web3Portfolios = () => {
             </Link>
           </div> 
           {/* 10 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 md:border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e md:border-e-0 lg:border-s-0 md:border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://xyro.io/'
               className=''
@@ -183,7 +183,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 11 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e border-e-0 lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://www.tallyup.com/'
               className=''
@@ -198,7 +198,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 12 */}
-          <div className='border-[#5D5D5D] border border-t-0 border-e lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 border-e lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='http://curate.style/'
               className=''
@@ -213,7 +213,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 13 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-b-0 md:border-b border-b-0 h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-b-0 md:border-b border-b-0 h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://lokal.pk/'
               className=''
@@ -228,7 +228,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 14 */}
-          <div className='border-[#5D5D5D] border border-t-0 lg:border-e lg:border-b-0 md:border-e-0 border-s-0 h h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 lg:border-e lg:border-b-0 md:border-e-0 border-s-0 h h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://kestrl.io/'
               className=''
@@ -243,7 +243,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 15 */}
-          <div className='border-[#5D5D5D] border md:border-e border-e-0 lg:border-b-0 md:border-b border-b-0 md:border-t-0 border-t lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border md:border-e border-e-0 lg:border-b-0 md:border-b border-b-0 md:border-t-0 border-t lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://www.zenpulsar.com/'
               className=''
@@ -258,7 +258,7 @@ const Web3Portfolios = () => {
             </Link>
           </div>
           {/* 16 */}
-          <div className='border-[#5D5D5D] border border-t-0 border-b-0 border-e lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
+          <div className='border-[#BBBFCA] border border-t-0 border-b-0 border-e lg:border-s-0 border-s h-[170px] flex items-center justify-center p-3'>
             <Link
               href='https://econommi.io/'
               className=''

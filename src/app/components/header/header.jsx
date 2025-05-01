@@ -14,7 +14,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
     const [isModalOpen, setIsModalOpen] = useState(false);
-      const navItems = [
+    const navItems = [
         { name: 'Expertise', link: '/#expertise' },
         { name: 'Defi Fund', link: '/defifund' },
         { name: 'Web3 Portfolio', link: '/web3-portfolios' },
@@ -35,10 +35,10 @@ const Header = () => {
     };
 
     return (
-        <header className={`border-b h-[70px] ${pathname === '/' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}>
+        <header className={`border-b h-[70px] border-[#BBBFCA]`}>
             <div className="max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5 flex items-center justify-between h-full ">
                 {/* Logo */}
-                <div className={`h-full flex items-center pe-7 border-e border-[#5D5D5D] ${pathname === '/' ? 'border-[#BBBFCA]' : ''}`}>
+                <div className={`h-full flex items-center pe-7 border-e border-[#BBBFCA]`}>
                     <Link href='/'>
                         <Image
                             src={Logo}
@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className={`h-full items-center border-e border-[#5D5D5D] hidden lg:flex text-sm uppercase tracking-wide ${pathname === '/' ? 'border-[#BBBFCA]' : ''} ${style.mainMenu}`}>
+                <nav className={`h-full items-center border-e hidden lg:flex text-sm uppercase tracking-wide border-[#BBBFCA] ${style.mainMenu}`}>
                     {navItems.map((item, idx) => (
                         <Link
                             onClick={() => handleItemClick(item)}
@@ -60,9 +60,7 @@ const Header = () => {
                             href={item.link}
                             className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link
                                 ? 'text-[#336DFF] font-medium'
-                                : pathname === '/v2'
-                                    ? 'text-[#F0F2F5]'
-                                    : 'text-[#F0F2F5] font-normal'
+                                : 'text-[#F0F2F5] font-normal'
                                 }`}
                         >
                             {item.name}
@@ -73,7 +71,7 @@ const Header = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className={`lg:hidden border-e h-full pe-2 ${pathname === '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}
+                    className={`lg:hidden border-e h-full pe-2 border-[#BBBFCA]`}
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle Menu"
                 >
@@ -99,9 +97,7 @@ const Header = () => {
                                 href={item.link}
                                 className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link
                                     ? 'text-[#336DFF] font-medium'
-                                    : pathname === '/v2'
-                                        ? 'text-[#F0F2F5]'
-                                        : 'text-[#F0F2F5] font-normal'
+                                    : 'text-[#F0F2F5] font-normal'
                                     }`}
                             >
                                 {item.name}
@@ -119,7 +115,7 @@ const Header = () => {
                         </h1>
                         <button
                             onClick={() => setIsModalOpen(false)}
-                            className={`absolute text-12 p-2.5 text-white top-6 right-6 border w-8 h-8 flex items-center justify-center ${pathname === '/v2' ? 'border-[#BBBFCA]' : 'border-[#5D5D5D]'}`}
+                            className={`absolute text-12 p-2.5 text-white top-6 right-6 border w-8 h-8 flex items-center justify-center border-[#BBBFCA]`}
                         >
                             ✕
                         </button>
