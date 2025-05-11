@@ -179,7 +179,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                             </p>
                         </div>
                     </div>
-                    <Link
+{/*                     <Link
                         href='/web3-portfolios'
                         className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
                     >
@@ -191,7 +191,7 @@ const MultiCardCarouselEpertise = ({ sectionTitle, customclass, path, navigation
                             alt='Icon'
                             className='w-3 h-3 object-contain '
                         />
-                    </Link>
+                    </Link> */}
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide-item">
                     <div className={`sliding-item relative flex flex-col border border-s-0 py-6 px-7 border-[#BBBFCA]`}>
