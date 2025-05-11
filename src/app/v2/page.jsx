@@ -269,9 +269,7 @@ const FrontPageV2 = () => {
               </h1>
               <p className='text-[#F4F4F2] font-light text-sm m-0 max-w-[810px]'>
                 Aweh Ventures is founder-led with deep expertise in Web3. We have built,scaled and exited a variety of businesses, from a 5000+ cryptocurrency mining operation to the 3rd largest NFT Marketplace.Since then, we created Aweh Ventures to share this expertise and support with other founders to accelerate their growth and now are invested in 20+ companies across blockchain,Tech and other passion project industries.
-                <br /><br />
-                Aweh Ventures is founder-led with deep expertise in Web3. We have built,scaled and exited a variety of businesses, from a 5000+ cryptocurrency mining operation to the 3rd largest NFT Marketplace.Since then, we created Aweh Ventures to share this expertise and support with other founders to accelerate their growth and now are invested in 20+ companies across blockchain,Tech and other passion project industries.
-              </p>
+                </p>
             </div>
           </div>
         </div>
