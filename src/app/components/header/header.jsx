@@ -23,7 +23,7 @@ const Header = () => {
         { name: 'Brands', link: '/#brands' },
         { name: 'Mission', link: '/#mission' },
         { name: 'Join-Us', link: '/join-us' },
-        { name: 'Contact Us', link: '#' },
+        { name: 'Contact Us', link: 'https://tally.so/r/np51G1' },
     ];
 
     const handleItemClick = (item) => {
@@ -56,7 +56,7 @@ const Header = () => {
                 <nav className={`h-full items-center border-e hidden lg:flex text-sm uppercase tracking-wide border-[#BBBFCA] ${style.mainMenu}`}>
                     {navItems.map((item, idx) => (
                         <Link
-                            onClick={() => handleItemClick(item)}
+                            // onClick={() => handleItemClick(item)}
                             key={idx}
                             href={item.link}
                             className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link
@@ -93,7 +93,7 @@ const Header = () => {
 
                         {navItems.map((item, idx) => (
                             <Link
-                                onClick={() => handleItemClick(item)}
+                                // onClick={() => handleItemClick(item)}
                                 key={idx}
                                 href={item.link}
                                 className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link

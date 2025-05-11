@@ -14,6 +14,12 @@ import FundPerformanceChart from './FundPerformanceChart';
 import ForwardArrow from '../../../public/assets/images/forward-arrow.png'
 import MultiCardCarouselEpertiseDefiFund from '../components/expertiseSlider/expertiseSliderDefiFund';
 import FAQ from './faq';
+import InfoIcon from '../../../public/assets/images/info-circle.svg'
+import ClockCircleIcon from '../../../public/assets/images/clock-regular.svg'
+import Calendericon from '../../../public/assets/images/calender.svg'
+import personsicon from '../../../public/assets/images/person-combines.svg'
+import MultiCardCarouselInvestersDefiFund from '../components/expertiseSlider/InvestersDefiFunds';
+
 
 
 const DefiFund = () => {
@@ -52,79 +58,42 @@ const DefiFund = () => {
       </div>
       {/* On Chain Fuds */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='lg:px-7 md:px-4 px-2 py-4 border-b border-s border-e border-[#BBBFCA]'>
-          <p className=' text-white font-medium text-[24px] m-0 my-3 leading-6'>
-            On-Chain Funds Designed for Every Risk Level
-            A Proven History of Success Over 5 Years
-          </p>
-          <ul className='list-disc ml-7 mb-5'>
-            <li className='text-[#F4F4F2] font-light text-[16px]'>
-              Average Annual APY of approximately 22.23% since 2020
-            </li>
-            <li className='text-[#F4F4F2] font-light text-[16px]'>
-              $5 Million in Assets Under Management
-            </li>
-            <li className='text-[#F4F4F2] font-light text-[16px]'>
-              Over 10 Years of Experience from Experts at Binance and Capgemini
-            </li>
+           <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-7 md:px-4 px-2 py-4 border-s border-e border-[#BBBFCA]' >
+              Funds Performance
+            </h1>
+        <div className=" grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 text-center lg:px-7 md:px-4 px-2 py-4 border-s border-e border-[#BBBFCA]">
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <p className="text-gray-600 text-sm">Average Annual APY</p>
+            <p className="text-2xl font-bold text-blue-900">~22.23%</p>
+            <p className="text-sm text-gray-500">since 2020</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <p className="text-gray-600 text-sm">Assets Under Management</p>
+            <p className="text-2xl font-bold text-blue-900">$5 Million</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <p className="text-gray-600 text-sm">Expert Experience</p>
+            <p className="text-2xl font-bold text-blue-900">10+ Years</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <p className="text-gray-600 text-sm">Total Projects</p>
+            <p className="text-2xl font-bold text-blue-900">20+</p>
+            <p className="text-sm text-gray-500">invested across blockchain</p>
+          </div>
+        </div>
 
-          </ul>
+
+        <div className=' lg:px-7 md:px-4 px-2 py-4 border-b border-s border-e border-[#BBBFCA]'>
           <FundPerformanceChart />
         </div>
       </div>
       {/* Our Funds */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className="border-s border-e border-b border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-9 md:pt-7 pt-9 lg:pb-5 md:pb-5 sm:pb-4 pb-3">
+        <div className="border-s border-e border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-9 md:pt-7 pt-9 lg:pb-5 md:pb-5 sm:pb-4 pb-3">
           <h1 className=' text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 ' >
             Our Funds</h1>
           <p className='text-[#F4F4F2] font-light text-sm m-0 max-w-[630px]'>
             Aweh Ventures institutional-grade DeFi products run on blockchain technology and provide investors with a unique range of strategies for a variety of risk appetites.
-          </p>
-        </div>
-        <div className=' border-s border-e border-[#BBBFCA] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-5'>
-          <div className='flex justify-center items-center px-6'>
-            <CryptoCard />
-          </div>
-          <div className='flex justify-center items-center px-6'>
-            <CryptoCard />
-          </div>
-          <div className='flex justify-center items-center px-6'>
-            <CryptoCard />
-          </div>
-        </div>
-
-        <div className='border-s border-e border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 py-6'>
-          <p className='flex items-center gap-3'>
-            <span className="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            </span>
-            <span>We Recommend investing for a minimum of 5 years</span>
-          </p>
-          <p className='flex items-center gap-3'>
-            <span className="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            </span>
-            <span>Investment Value can go up as well as down, Capital is not guaranteed</span>
-          </p>
-          <p className='flex items-center gap-3'>
-            <span className="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            </span>
-            <span>Redemptions Available on a quarterly basis</span>
-          </p>
-          <p className='flex items-center gap-3'>
-            <span className="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            </span>
-            <span>Funds are accessible by Invite Only</span>
           </p>
         </div>
         <div className='border-s border-b border-e border-[#BBBFCA] flex justify-end'>
@@ -142,11 +111,68 @@ const DefiFund = () => {
             />
           </Link>
         </div>
+        {/* <div className='hidden border-s border-e border-[#BBBFCA]  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-5'>
+          <div className='flex justify-center items-center px-6'>
+            <CryptoCard />
+          </div>
+          <div className='flex justify-center items-center px-6'>
+            <CryptoCard />
+          </div>
+          <div className='flex justify-center items-center px-6'>
+            <CryptoCard />
+          </div>
+        </div> */}
+
+        <div className='border-s border-e border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 py-6'>
+          <h4 className=' text-white lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px] font-medium m-0 ' >
+            Investment Notes
+          </h4>
+          <p className='flex items-center gap-3 mb-3'>
+            <Image
+              src={ClockCircleIcon}
+              width={16}
+              height={16}
+              alt='Icon'
+              className='w-4 h-4 object-contain '
+            />
+            <span>Recommended minimum investment period: 5 years</span>
+          </p>
+          <p className='flex items-center gap-3 mb-3'>
+            <Image
+              src={InfoIcon}
+              width={16}
+              height={16}
+              alt='Icon'
+              className='w-4 h-4 object-contain '
+            />
+            <span>Investment value can go up as well as down; capital is not guaranteed</span>
+          </p>
+          <p className='flex items-center gap-3 mb-3'>
+            <Image
+              src={Calendericon}
+              width={16}
+              height={16}
+              alt='Icon'
+              className='w-4 h-4 object-contain '
+            />
+            <span>Redemptions: Quarterly</span>
+          </p>
+          <p className='flex items-center gap-3'>
+            <Image
+              src={personsicon}
+              width={16}
+              height={16}
+              alt='Icon'
+              className='w-4 h-4 object-contain '
+            />
+            <span>Funds: Invite Only</span>
+          </p>
+        </div>
       </div>
 
       {/* Why Aweh Ventures? */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <h1 className='border-s border-e border-b border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
+        <h1 className='border border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >
           Why Aweh Ventures?
         </h1>
         <div className='border-s border-e border-b border-[#BBBFCA]'>
@@ -258,7 +284,7 @@ const DefiFund = () => {
 
       {/* Benifits for investers */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <MultiCardCarouselEpertiseDefiFund sectionTitle="Benefits For Investors" customclass="investers" path='' navigation={true} />
+        <MultiCardCarouselInvestersDefiFund sectionTitle="Benefits For Investors" customclass="investers" path='' navigation={true} />
       </div>
 
       {/* Faq's */}

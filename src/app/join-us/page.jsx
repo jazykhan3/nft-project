@@ -155,10 +155,10 @@ const JoinUs = () => {
             </p>
             <div className='lg:w-[55%] md:w-[40%] w-full flex items-end'>
               <Link
-                href='https://tally.so/r/np51G1'
+                href='https://tally.so/r/wzgoQM'
                 className='text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80 h-fit'
               >
-                Contact Us
+                Join Us
                 <Image
                   src={ForwardArrow}
                   width={12}

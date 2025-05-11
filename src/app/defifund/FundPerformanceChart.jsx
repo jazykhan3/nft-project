@@ -181,7 +181,7 @@ const FundPerformanceChart = () => {
 
     return (
         <div className="bg-gradient-to-b from-[#271EA4] via-[#4D3BB7] to-[#7463CB] p-6 text-white rounded-lg shadow-lg">
-            <h1 className="text-4xl font-bold mb-4 ml-4">Fund Performance</h1>
+            {/* <h1 className="text-4xl font-bold mb-4 ml-4">Fund Performance</h1> */}
 
             {/* Performance Summary Section */}
             <div className="flex justify-center mb-6 px-2">

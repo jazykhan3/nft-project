@@ -171,7 +171,7 @@ const MultiCardCarouselEpertiseDefiFund = ({ sectionTitle, customclass, path, na
                     </div>
                     <Link
                         href='/web3-portfolios'
-                        className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
+                        className='hidden uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
                     >
                         See our Venture Web3 Portfolio
                         <Image
@@ -292,7 +292,7 @@ const MultiCardCarouselEpertiseDefiFund = ({ sectionTitle, customclass, path, na
                     </div>
                     <Link
                         href='/web3-portfolios'
-                        className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
+                        className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] hidden gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
                     >
                         See our Venture Web3 Portfolio
                         <Image
@@ -413,7 +413,7 @@ const MultiCardCarouselEpertiseDefiFund = ({ sectionTitle, customclass, path, na
                     </div>
                     <Link
                         href='/web3-portfolios'
-                        className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] flex gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
+                        className='uppercase h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-[13px] hidden gap-2.5 p-4 w-full bg-[#336DFF] justify-center items-center hover:bg-[#336DFF]/80'
                     >
                         See our Venture Web3 Portfolio
                         <Image
