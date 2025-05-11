@@ -8,14 +8,12 @@ import BottomleftAngle from '../../../public/assets/images/bottom-left-triangle.
 import BottomRightTriangle from '../../../public/assets/images/bottom-right-triangle.png'
 import PersonShareImage from '../../../public/assets/images/share-icon.png'
 import handGroup from '../../../public/assets/images/handGroup.png';
-import FundPerformanceImage from '../../../public/assets/images/funds-performance.png'
-import growthLogo from '../../../public/assets/images/growth-icon.png';
-import assettradeLogo from '../../../public/assets/images/asset-trade.png';
-import assetmanageLogo from '../../../public/assets/images/asset-manage.png';
 import CryptoCard from './CryptoCard'
 import Link from 'next/link';
 import FundPerformanceChart from './FundPerformanceChart';
+import ForwardArrow from '../../../public/assets/images/forward-arrow.png'
 import MultiCardCarouselEpertiseDefiFund from '../components/expertiseSlider/expertiseSliderDefiFund';
+import FAQ from './faq';
 
 
 const DefiFund = () => {
@@ -24,8 +22,8 @@ const DefiFund = () => {
       <Header />
       {/* Aweh Ventures & Asset management Section */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
-        <div className='border-b border-s border-e border-[#BBBFCA] grid lg:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-8 '>
-          <div className='lg:px-7 md:px-4 px-2 lg:py-10 md:py-7 py-4 lg:col-span-1 md:col-span-2 col-span-full'>
+        <div className='border-b border-s border-e border-[#BBBFCA] lg:py-10 md:py-7 py-4'>
+          <div className='lg:px-7 md:px-4 px-2 lg:col-span-1 md:col-span-2 col-span-full max-w-[650px] mx-auto'>
             <h1 className='text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0' >
               Aweh Ventures <br />
               asset management
@@ -49,8 +47,6 @@ const DefiFund = () => {
                 className='w-3 h-3 object-contain absolute bottom-2 left-0'
               />
             </div>
-          </div>
-          <div className='md:block hidden col-span-1'>
           </div>
         </div>
       </div>
@@ -96,15 +92,56 @@ const DefiFund = () => {
             <CryptoCard />
           </div>
         </div>
-        <p className='border-s border-b border-e border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 py-6'>
-          *We Recommend investing for a minimum of 5 years
-          <br />
-          *Investment Value can go up as well as down, Capital is not guaranteed
-          <br />
-          *Redemptions Available on a quarterly basis
-          <br />
-          *Funds are accessible by Invite Only
-        </p>
+
+        <div className='border-s border-e border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 py-6'>
+          <p className='flex items-center gap-3'>
+            <span className="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+            </span>
+            <span>We Recommend investing for a minimum of 5 years</span>
+          </p>
+          <p className='flex items-center gap-3'>
+            <span className="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+            </span>
+            <span>Investment Value can go up as well as down, Capital is not guaranteed</span>
+          </p>
+          <p className='flex items-center gap-3'>
+            <span className="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+            </span>
+            <span>Redemptions Available on a quarterly basis</span>
+          </p>
+          <p className='flex items-center gap-3'>
+            <span className="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+            </span>
+            <span>Funds are accessible by Invite Only</span>
+          </p>
+        </div>
+        <div className='border-s border-b border-e border-[#BBBFCA] flex justify-end'>
+          <Link
+            href='https://tally.so/r/np51G1'
+            className='h-fit md:max-w-[340px] min-w-[25%] text-white font-medium text-sm flex gap-2.5 p-4 w-full bg-[#336DFF] justify-end items-center hover:bg-[#336DFF]/80'
+          >
+            Contact Us
+            <Image
+              src={ForwardArrow}
+              width={12}
+              height={12}
+              alt='Icon'
+              className='w-3 h-3 object-contain '
+            />
+          </Link>
+        </div>
       </div>
 
       {/* Why Aweh Ventures? */}
@@ -223,6 +260,23 @@ const DefiFund = () => {
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <MultiCardCarouselEpertiseDefiFund sectionTitle="Benefits For Investors" customclass="investers" path='' navigation={true} />
       </div>
+
+      {/* Faq's */}
+
+      <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
+        <div className="border-s border-e border-b border-[#BBBFCA] lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-9 md:pt-7 pt-9 lg:pb-5 md:pb-5 sm:pb-4 pb-3">
+          <h1 className=' text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 ' >
+            Frequently Asked Questions</h1>
+          <p className='text-[#F4F4F2] font-light text-sm m-0 max-w-[630px]'>
+            Common questions about our DeFi fund offerings and investment approach.
+          </p>
+        </div>
+        <div className='border-b border-s border-e border-[#BBBFCA] py-5'>
+          <FAQ />
+        </div>
+      </div>
+
+
       {/* Learn More About our offerings */}
       <div className='max-w-[1440px] mx-auto lg:px-9 md:px-6 sm:px-4 px-2.5'>
         <h1 className='border-s border-e border-b border-[#BBBFCA] text-white lg:text-[40px] md:text-4xl sm:text-3xl text-[26px] font-medium m-0 lg:px-6 md:px-4 sm:px-3 px-2 lg:pt-12 md:pt-10 pt-9 lg:pb-7 md:pb-5 sm:pb-4 pb-3' >

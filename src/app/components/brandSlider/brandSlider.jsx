@@ -84,7 +84,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Asset Management, Blockchain Advisory & Venture, established 2022
                                 </p>
-                                <p className="text-sm text-[#F4F4F2] m-0">Founded by Mohammed Carrim Ganey</p>
+                                <p className="hidden text-sm text-[#F4F4F2] m-0">Founded by Mohammed Carrim Ganey</p>
                             </div>
                             <Link
                                 href='https://www.aweh.ventures/'
@@ -120,7 +120,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Fine Jewellery & Design established in 1987
                                 </p>
-                                <p className="text-sm text-[#F4F4F2] m-0">
+                                <p className=" hidden text-sm text-[#F4F4F2] m-0">
                                     Founded by Nadiyah,Fauzy & Nazeer Carrim Ganey
                                 </p>
                             </div>
@@ -158,7 +158,7 @@ const MultiCardCarouselBrands = ({ sectionTitle, customclass, path, navigation =
                                 <p className="text-sm font-light text-[#F4F4F2] mb-2">
                                     Pet Wellness brand, established in 2021
                                 </p>
-                                <p className="text-sm text-[#F4F4F2] m-0">
+                                <p className="hidden text-sm text-[#F4F4F2] m-0">
                                     Directed by Mohammed Carrim Ganey
                                 </p>
                             </div>

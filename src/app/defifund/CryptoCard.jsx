@@ -19,8 +19,8 @@ const data = [
 
 const CryptoCard = () => {
   return (
-    <div className="bg-[#1a1d23] rounded-xl shadow-md text-white w-full max-w-sm">
-      <div className=" p-6">
+    <div className="bg-[#616774] rounded-xl shadow-md text-white w-full max-w-sm">
+      <div className=" px-4 pt-4">
         <div className="flex items-center mb-4">
           {/* Logo */}
           <div className="w-6 h-6 bg-green-400 rounded-full mr-2"></div>
@@ -40,7 +40,7 @@ const CryptoCard = () => {
         </div>
 
         {/* Chart */}
-        <div className="h-28">
+        <div className="h-10">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <Line type="monotone" dataKey="price" stroke="#00FFB2" strokeWidth={2} dot={false} />
@@ -49,13 +49,13 @@ const CryptoCard = () => {
         </div>
       </div>
       {/* Price and change */}
-      <div className="mt-4 bg-[#272c35] px-4 py-5 rounded-xl">
+      <div className="mt-4 bg-[#424549] px-4 py-3 rounded-xl">
         <Link
           href='https://app.enzyme.finance/vault/0x1ce8aafb51e79f6bdc0ef2ebd6fd34b00620f6db'
           className='flex justify-between items-center'
         >
           <div>
-            <div className="text-xl font-semibold">$1,877.40 <span className="text-xs text-gray-400">/ share</span></div>
+            <div className="text-sm font-semibold">$1,877.40 <span className="text-xs text-gray-400">/ share</span></div>
             <div className="text-xs text-red-400">-3.05% 24h</div>
           </div>
           <div className="text-gray-400 text-2xl">&rarr;</div>
