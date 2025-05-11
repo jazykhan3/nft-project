@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import barsIcon from '../../../../public/assets/images/bars-Icon.png'
 import Logo from '../../../../public/assets/images/logo.png'
 import BottomleftAngle from '../../../../public/assets/images/bottom-left-triangle.png'
@@ -13,8 +13,13 @@ import style from './style.module.scss'
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-    const loationPath = `/${window.location.hash}`;
-    const [isModalOpen, setIsModalOpen] = useState(false);
+      const [locationPath, setLocationPath] = useState('');
+
+ useEffect(() => {
+    const path = `/${window.location.hash}`;
+    setLocationPath(path);
+  }, []);
+      const [isModalOpen, setIsModalOpen] = useState(false);
     const navItems = [
         { name: 'Expertise', link: '/#expertise' },
         { name: 'Defi Fund', link: '/defifund' },
@@ -59,7 +64,7 @@ const Header = () => {
                             // onClick={() => handleItemClick(item)}
                             key={idx}
                             href={item.link}
-                            className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link
+                            className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || locationPath === item.link
                                 ? 'text-[#336DFF] font-medium'
                                 : 'text-[#F0F2F5] font-normal'
                                 }`}
@@ -96,7 +101,7 @@ const Header = () => {
                                 // onClick={() => handleItemClick(item)}
                                 key={idx}
                                 href={item.link}
-                                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link
+                                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || locationPath === item.link
                                     ? 'text-[#336DFF] font-medium'
                                     : 'text-[#F0F2F5] font-normal'
                                     }`}
