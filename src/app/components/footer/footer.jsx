@@ -1,17 +1,12 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Logo from '../../../../public/assets/images/footer-logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
 const Footer = () => {
   const pathname = usePathname();
-   const [locationPath, setLocationPath] = useState('');
-
- useEffect(() => {
-    const path = `/${window.location.hash}`;
-    setLocationPath(path);
-  }, []);
+  const loationPath = `/${window.location.hash}`;
   const navItems = [
     { name: 'Expertise', link: '/#expertise' },
     { name: 'Defi Fund', link: '/defifund' },
@@ -95,7 +90,7 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={item.link}
-                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || locationPath === item.link
+                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link
                   ? 'text-[#336DFF] font-medium'
                   : 'text-[#F0F2F5] font-normal'
                   }`}
