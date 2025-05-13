@@ -16,13 +16,13 @@ html {
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+
   :root {
     --background:#495464;
     /* --background: rgba(20, 20, 20, 1); */
     --foreground: #ededed;
   }
-}
+
 
 body {
   background: var(--background);
