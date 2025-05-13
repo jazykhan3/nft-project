@@ -1,12 +1,17 @@
 'use client';
-import React from 'react'
+import React ,{useEffect} from 'react'
 import Logo from '../../../../public/assets/images/footer-logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
 const Footer = () => {
   const pathname = usePathname();
-  const loationPath = `/${window.location.hash}`;
+    const [locationPath, setLocationPath] = useState('');
+
+ useEffect(() => {
+    const path = `/${window.location.hash}`;
+    setLocationPath(path);
+  }, []);
   const navItems = [
     { name: 'Expertise', link: '/#expertise' },
     { name: 'Defi Fund', link: '/defifund' },
