@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-    darkMode: 'class', // important for dark/light mode toggle
+    // darkMode: 'class', // important for dark/light mode toggle
     theme: {
       extend: {},
     },
