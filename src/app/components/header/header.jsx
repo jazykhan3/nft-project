@@ -7,14 +7,18 @@ import { useState } from 'react';
 import barsIcon from '../../../../public/assets/images/bars-Icon.png'
 import Logo from '../../../../public/assets/images/logo.png'
 import BottomleftAngle from '../../../../public/assets/images/bottom-left-triangle.png'
-
+import {useEffect} from 'react';
 import style from './style.module.scss'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-    const loationPath = `/${window.location.hash}`;
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [locationPath, setLocationPath] = useState('');
+
+ useEffect(() => {
+    const path = `/${window.location.hash}`;
+    setLocationPath(path);
+  }, []);    const [isModalOpen, setIsModalOpen] = useState(false);
     const navItems = [
         { name: 'Expertise', link: '/#expertise' },
         { name: 'Defi Fund', link: '/defifund' },
