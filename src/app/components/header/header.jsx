@@ -3,11 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import barsIcon from '../../../../public/assets/images/bars-Icon.png'
 import Logo from '../../../../public/assets/images/logo.png'
 import BottomleftAngle from '../../../../public/assets/images/bottom-left-triangle.png'
-import {useEffect} from 'react';
 import style from './style.module.scss'
 
 const Header = () => {
