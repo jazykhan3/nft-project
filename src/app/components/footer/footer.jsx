@@ -1,5 +1,5 @@
 'use client';
-import React ,{useEffect} from 'react'
+import React ,{useEffect,useState} from 'react'
 import Logo from '../../../../public/assets/images/footer-logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
