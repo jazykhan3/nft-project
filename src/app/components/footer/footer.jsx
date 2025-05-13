@@ -95,7 +95,7 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={item.link}
-                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || loationPath === item.link
+                className={`text-sm hover:text-[#336DFF] transition-colors duration-200 ${pathname === item.link || locationPath === item.link
                   ? 'text-[#336DFF] font-medium'
                   : 'text-[#F0F2F5] font-normal'
                   }`}
